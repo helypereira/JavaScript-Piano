@@ -1,0 +1,272 @@
+* {
+    font-family: 'Righteous', sans-serif;
+}
+
+body {
+    background-color: #BA1114;
+}
+
+a {
+    list-style: none;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+a:active {
+    text-decoration: underline;
+}
+#container {
+    display: flex;
+}
+
+#container-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.logo {
+    color: #fff;
+    font-size: 75px;
+}
+
+.logo-subtitle {
+    margin-top: -70px;
+    font-size: 30px;
+}
+
+#container-piano {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding: 100px;
+}
+
+/* musical notes */
+
+.keyboardKey {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    box-shadow: 1px 4px 15px 0px rgba(0,0,0,0.54);
+}
+
+
+
+.c {
+    background-color: #fff;
+    width: 70px;
+    height: 320px;
+    margin: 0px 2px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.db {
+    background-color: #000;
+    width: 50px;
+    height: 200px;
+    margin: 23px -25px;
+    border-radius: 5px;
+    transform: rotate(-6deg);
+    z-index: 1;
+    color: white;
+}
+
+.d {
+    background-color: #fff;
+    width: 70px;
+    height: 320px;
+    margin: 0px 2px;
+    border-radius: 5px;
+    transform: rotate(-2deg);
+}
+
+.eb {
+    background-color: #000;
+    width: 50px;
+    height: 200px;
+    margin: 7px -25px;
+    border-radius: 5px;
+    transform: rotate(-3deg);
+    color: white;
+}
+
+.e {
+    background-color: #fff;
+    width: 70px;
+    height: 320px;
+    margin: 20px 2px;
+    border-radius: 5px;
+}
+
+.f {
+    background-color: #fff;
+    width: 70px;
+    height: 320px;
+    margin: 10px 2px;
+    border-radius: 5px;
+    transform: rotate(1deg);
+}
+
+.gb {
+    background-color: #000;
+    width: 50px;
+    height: 200px;
+    margin: 0px -25px;
+    border-radius: 5px;
+    transform: rotate(5deg);
+    color: white;
+}
+
+.g {
+    background-color: #fff;
+    width: 70px;
+    height: 320px;
+    margin: 0px 2px;
+    border-radius: 5px;
+}
+
+.ab {
+    background-color: #000;
+    width: 50px;
+    height: 200px;
+    margin: 20px -25px;
+    border-radius: 5px;
+    transform: rotate(-1deg);
+    z-index: 1;
+    color: white;
+}
+
+.a {
+    background-color: #fff;
+    width: 70px;
+    height: 320px;
+    margin: 15px 5px;
+    border-radius: 5px;
+    transform: rotate(-3deg);
+}
+
+.bb {
+    background-color: #000;
+    width: 50px;
+    height: 200px;
+    margin: 20px -25px;
+    border-radius: 5px;
+    transform: rotate(3deg);    
+    color: white;
+}
+
+.b {
+    background-color: #fff;
+    width: 70px;
+    height: 320px;
+    margin: 0px 2px;
+    border-radius: 5px;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+}
+
+.logo-github {
+    width: 50px;
+    height: 50px;
+}
+
+.author {
+    color: #fff;
+    margin-left: 10px;
+}
+
+#container-footer {
+    display: flex;
+    padding: 10px 100px;
+}
+
+#container-notes {
+    width: 70%;
+    padding: 0px 100px;
+}
+
+.text-info {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.clicked {
+    box-shadow: 1px 4px 15px 0px rgb(255 237 0);
+}
+
+/* mobile */
+@media only screen and (max-width: 768px){
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #container-footer {
+        flex-direction: column;
+    }
+
+    #container-piano {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        padding: 20px 0px;
+    }
+    
+    #footer {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        padding: 12px;
+    }
+
+    .text-info {
+        display: none;
+    }
+
+    #container-footer {
+        display: flex;
+        align-items: center;
+    }
+    
+    #container-notes {
+        width: auto;
+        padding: 0px 0px;
+    }
+
+    .author {
+        color: #fff;
+        margin-left: 0px;
+    }
+    
+}
